@@ -1,0 +1,566 @@
+{
+ "platform": "The Trade Desk",
+ "levels": [
+  "Campaign",
+  "Ad Group",
+  "Ad"
+ ],
+ "fields": [
+  {
+   "id": "PacingMode",
+   "level": "Campaign",
+   "values": [
+    "Off",
+    "PaceToEndOfFlight",
+    "PaceAhead",
+    "PaceAsSoonAsPossible"
+   ]
+  },
+  {
+   "id": "DailyBudget",
+   "level": "Campaign",
+   "values": [
+    "required",
+    "optional"
+   ]
+  },
+  {
+   "id": "AutoAllocatorEnabled",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "AutoPrioritizationEnabled",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "MinimumAdGroupSpendInAdvertiserCurrency",
+   "level": "Campaign",
+   "values": [
+    "set"
+   ]
+  },
+  {
+   "id": "budget source",
+   "level": "Campaign",
+   "values": [
+    "CampaignFlights",
+    "StartDate + Budget on campaign"
+   ]
+  },
+  {
+   "id": "CampaignType",
+   "level": "Campaign",
+   "values": [
+    "Standard",
+    "ProgrammaticGuaranteed"
+   ]
+  },
+  {
+   "id": "PrimaryChannel",
+   "level": "Campaign",
+   "values": [
+    "Display",
+    "Video",
+    "Audio",
+    "TV",
+    "NativeDisplay",
+    "NativeVideo",
+    "DigitalOutOfHome"
+   ]
+  },
+  {
+   "id": "campaign goal (Primary/Secondary/Tertiary)",
+   "level": "Campaign",
+   "values": [
+    "CPAInAdvertiserCurrency",
+    "CPCInAdvertiserCurrency",
+    "CPCVInAdvertiserCurrency",
+    "CTRInPercent",
+    "MaximizeLtvIncrementalReach",
+    "MaximizeReach",
+    "MiaozhenOTPInPercent",
+    "NewBuyerTargetValue",
+    "NielsenOTPInPercent",
+    "ReturnOnAdSpendPercent",
+    "VCPMInAdvertiserCurrency",
+    "VCRInPercent",
+    "ViewabilityInPercent"
+   ]
+  },
+  {
+   "id": "CustomROASType",
+   "level": "Campaign",
+   "values": [
+    "Disabled",
+    "PixelWeighting",
+    "ClickViewthroughWeighting",
+    "CompositeWeighting"
+   ]
+  },
+  {
+   "id": "CustomCPAType",
+   "level": "Campaign",
+   "values": [
+    "Disabled",
+    "PixelWeighting",
+    "ClickViewthroughWeighting"
+   ]
+  },
+  {
+   "id": "IsBallotMeasure",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "BallotMeasureProfile",
+   "level": "Campaign",
+   "values": [
+    "required"
+   ]
+  },
+  {
+   "id": "Version",
+   "level": "Campaign",
+   "values": [
+    "Kokai"
+   ]
+  },
+  {
+   "id": "SeedId",
+   "level": "Campaign",
+   "values": [
+    "set"
+   ]
+  },
+  {
+   "id": "BudgetingVersion",
+   "level": "Campaign",
+   "values": [
+    "Solimar",
+    "Kokai"
+   ]
+  },
+  {
+   "id": "BudgetInImpressions (campaign)",
+   "level": "Campaign",
+   "values": [
+    "set"
+   ]
+  },
+  {
+   "id": "ROIGoal",
+   "level": "Ad Group",
+   "values": [
+    "CPAInAdvertiserCurrency",
+    "CPCInAdvertiserCurrency",
+    "CPCVInAdvertiserCurrency",
+    "CTRInPercent",
+    "MaximizeLtvIncrementalReach",
+    "MaximizeReach",
+    "MiaozhenOTPInPercent",
+    "NewBuyerTargetValue",
+    "NielsenOTPInPercent",
+    "ReturnOnAdSpendPercent",
+    "VCPMInAdvertiserCurrency",
+    "VCRInPercent",
+    "ViewabilityInPercent"
+   ]
+  },
+  {
+   "id": "DimensionalBiddingAutoOptimizationSettings",
+   "level": "Ad Group",
+   "values": [
+    "HasAdFormatId",
+    "HasDeviceTypeId",
+    "HasDomainFragmentId",
+    "HasGeoSegmentId",
+    "HasSupplyVendorId",
+    "HasAdvertiserTargetingDataId",
+    "HasThirdPartyDataId"
+   ]
+  },
+  {
+   "id": "PacingMode (ad group)",
+   "level": "Ad Group",
+   "values": [
+    "PaceToEndOfDay",
+    "Off",
+    "PaceToEndOfFlight",
+    "PaceAhead"
+   ]
+  },
+  {
+   "id": "AllocationType",
+   "level": "Ad Group",
+   "values": [
+    "Maximum",
+    "Minimum"
+   ]
+  },
+  {
+   "id": "BudgetInImpressions (ad group)",
+   "level": "Ad Group",
+   "values": [
+    "set"
+   ]
+  }
+ ],
+ "combos": [
+  {
+   "PacingMode": "Off",
+   "DailyBudget": "required",
+   "source": "ttd/campaign.md:355"
+  },
+  {
+   "PacingMode": "PaceToEndOfFlight",
+   "DailyBudget": "optional",
+   "source": "ttd/campaign.md:355"
+  },
+  {
+   "PacingMode": "PaceAhead",
+   "DailyBudget": "optional",
+   "source": "ttd/campaign.md:355"
+  },
+  {
+   "PacingMode": "PaceAsSoonAsPossible",
+   "DailyBudget": "optional",
+   "source": "ttd/campaign.md:355"
+  },
+  {
+   "AutoPrioritizationEnabled": "true",
+   "AutoAllocatorEnabled": "true",
+   "source": "ttd/campaign.md:342"
+  },
+  {
+   "MinimumAdGroupSpendInAdvertiserCurrency": "set",
+   "AutoAllocatorEnabled": "true",
+   "AutoPrioritizationEnabled": "true",
+   "source": "ttd/campaign.md:364"
+  },
+  {
+   "budget source": "CampaignFlights",
+   "source": "ttd/campaign.md:348"
+  },
+  {
+   "budget source": "StartDate + Budget on campaign",
+   "source": "ttd/campaign.md:373"
+  },
+  {
+   "CustomROASType": "PixelWeighting",
+   "campaign goal (Primary/Secondary/Tertiary)": "ReturnOnAdSpendPercent",
+   "source": "ttd/campaign.md:354"
+  },
+  {
+   "CustomROASType": "ClickViewthroughWeighting",
+   "campaign goal (Primary/Secondary/Tertiary)": "ReturnOnAdSpendPercent",
+   "source": "ttd/campaign.md:354"
+  },
+  {
+   "CustomROASType": "CompositeWeighting",
+   "campaign goal (Primary/Secondary/Tertiary)": "ReturnOnAdSpendPercent",
+   "source": "ttd/campaign.md:354"
+  },
+  {
+   "IsBallotMeasure": "true",
+   "BallotMeasureProfile": "required",
+   "source": "ttd/campaign.md:363"
+  },
+  {
+   "SeedId": "set",
+   "Version": "Kokai",
+   "source": "ttd/campaign.md:372"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdvertiserTargetingDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasThirdPartyDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdvertiserTargetingDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CTRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasThirdPartyDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCVInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCVInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCVInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCVInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPCVInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "MaximizeReach",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "MaximizeReach",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "MaximizeReach",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "MaximizeReach",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "MaximizeReach",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ReturnOnAdSpendPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ReturnOnAdSpendPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ReturnOnAdSpendPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ReturnOnAdSpendPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ReturnOnAdSpendPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCPMInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCPMInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCPMInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCPMInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCPMInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdvertiserTargetingDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "VCRInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasThirdPartyDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ViewabilityInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ViewabilityInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ViewabilityInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ViewabilityInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "ViewabilityInPercent",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdFormatId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDeviceTypeId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasDomainFragmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasGeoSegmentId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasSupplyVendorId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasAdvertiserTargetingDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "ROIGoal": "CPAInAdvertiserCurrency",
+   "DimensionalBiddingAutoOptimizationSettings": "HasThirdPartyDataId",
+   "source": "ttd/ad_group.md:576"
+  },
+  {
+   "BudgetingVersion": "Solimar",
+   "AllocationType": "Maximum",
+   "source": "ttd/ad_group.md:1032"
+  },
+  {
+   "BudgetingVersion": "Kokai",
+   "AllocationType": "Minimum",
+   "source": "ttd/ad_group.md:1032"
+  },
+  {
+   "BudgetInImpressions (ad group)": "set",
+   "BudgetInImpressions (campaign)": "set",
+   "source": "ttd/ad_group.md:1035"
+  }
+ ],
+ "notes": {
+  "Ad": "Ad-level settings not mapped (TTD has creatives, not ads).",
+  "Ad Group": "ROI goal to auto-optimization dimension mapping is rebuilt from a flattened table in the docs (ad_group.md:576); goal names map to ROIGoal properties by name."
+ }
+}

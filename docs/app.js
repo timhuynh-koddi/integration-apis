@@ -2,6 +2,10 @@ const PLATFORMS = [
   {id: "odax", file: "data/facebook-odax.json", label: "Facebook ODAX"},
   {id: "legacy", file: "data/facebook-legacy.json", label: "Facebook Legacy"},
   {id: "chatgpt", file: "data/chatgpt-ads.json", label: "ChatGPT Ads"},
+  {id: "tiktok", file: "data/tiktok.json", label: "TikTok"},
+  {id: "ttd", file: "data/ttd.json", label: "The Trade Desk"},
+  {id: "googleads", file: "data/googleads.json", label: "Google Ads"},
+  {id: "pinterest", file: "data/pinterest.json", label: "Pinterest"},
 ];
 const $ = (id) => document.getElementById(id);
 const key = (f, v) => f + "\u0000" + v;

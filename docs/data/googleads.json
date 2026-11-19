@@ -1,0 +1,345 @@
+{
+ "platform": "Google Ads",
+ "levels": [
+  "Campaign",
+  "Ad Group",
+  "Ad"
+ ],
+ "fields": [
+  {
+   "id": "advertisingChannelType",
+   "level": "Campaign",
+   "values": [
+    "SEARCH",
+    "DISPLAY",
+    "SHOPPING",
+    "HOTEL",
+    "VIDEO",
+    "MULTI_CHANNEL",
+    "LOCAL",
+    "SMART",
+    "PERFORMANCE_MAX",
+    "LOCAL_SERVICES",
+    "TRAVEL",
+    "DEMAND_GEN"
+   ]
+  },
+  {
+   "id": "advertisingChannelSubType",
+   "level": "Campaign",
+   "values": [
+    "SEARCH_MOBILE_APP",
+    "DISPLAY_MOBILE_APP",
+    "SEARCH_EXPRESS",
+    "DISPLAY_EXPRESS",
+    "SHOPPING_SMART_ADS",
+    "DISPLAY_GMAIL_AD",
+    "DISPLAY_SMART_CAMPAIGN",
+    "VIDEO_ACTION",
+    "VIDEO_NON_SKIPPABLE",
+    "APP_CAMPAIGN",
+    "APP_CAMPAIGN_FOR_ENGAGEMENT",
+    "LOCAL_CAMPAIGN",
+    "SHOPPING_COMPARISON_LISTING_ADS",
+    "SMART_CAMPAIGN",
+    "VIDEO_SEQUENCE",
+    "APP_CAMPAIGN_FOR_PRE_REGISTRATION",
+    "VIDEO_REACH_TARGET_FREQUENCY",
+    "TRAVEL_ACTIVITIES",
+    "YOUTUBE_AUDIO"
+   ]
+  },
+  {
+   "id": "shoppingSetting.campaignPriority",
+   "level": "Campaign",
+   "values": [
+    "0",
+    "1",
+    "2"
+   ]
+  },
+  {
+   "id": "shoppingSetting.merchantId",
+   "level": "Campaign",
+   "values": [
+    "required on create"
+   ]
+  },
+  {
+   "id": "shoppingSetting.disableProductFeed",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "shoppingSetting.ignoreBrandExclusionInShoppingAds",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "shoppingSetting.advertisingPartnerIds",
+   "level": "Campaign",
+   "values": [
+    "set"
+   ]
+  },
+  {
+   "id": "networkSettings.targetGoogleSearch",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "networkSettings.targetSearchNetwork",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "CampaignBudget.period",
+   "level": "Campaign",
+   "values": [
+    "DAILY",
+    "CUSTOM_PERIOD"
+   ]
+  },
+  {
+   "id": "CampaignBudget.amountMicros",
+   "level": "Campaign",
+   "values": [
+    "used"
+   ]
+  },
+  {
+   "id": "CampaignBudget.totalAmountMicros",
+   "level": "Campaign",
+   "values": [
+    "used"
+   ]
+  },
+  {
+   "id": "AdGroup.type",
+   "level": "Ad Group",
+   "values": [
+    "SEARCH_STANDARD",
+    "DISPLAY_STANDARD",
+    "SHOPPING_PRODUCT_ADS",
+    "HOTEL_ADS",
+    "SHOPPING_SMART_ADS",
+    "SEARCH_DYNAMIC_ADS",
+    "SHOPPING_COMPARISON_LISTING_ADS",
+    "PROMOTED_HOTEL_ADS",
+    "SMART_CAMPAIGN_ADS",
+    "TRAVEL_ADS",
+    "YOUTUBE_AUDIO",
+    "VIDEO_BUMPER",
+    "VIDEO_TRUE_VIEW_IN_STREAM",
+    "VIDEO_TRUE_VIEW_IN_DISPLAY",
+    "VIDEO_NON_SKIPPABLE_IN_STREAM",
+    "VIDEO_RESPONSIVE",
+    "VIDEO_EFFICIENT_REACH"
+   ]
+  }
+ ],
+ "combos": [
+  {
+   "advertisingChannelType": "SEARCH",
+   "advertisingChannelSubType": "SEARCH_MOBILE_APP",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "DISPLAY",
+   "advertisingChannelSubType": "DISPLAY_MOBILE_APP",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "SEARCH",
+   "advertisingChannelSubType": "SEARCH_EXPRESS",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "DISPLAY",
+   "advertisingChannelSubType": "DISPLAY_EXPRESS",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "advertisingChannelSubType": "SHOPPING_SMART_ADS",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "advertisingChannelSubType": "SHOPPING_COMPARISON_LISTING_ADS",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "SMART",
+   "advertisingChannelSubType": "SMART_CAMPAIGN",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "LOCAL",
+   "advertisingChannelSubType": "LOCAL_CAMPAIGN",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "TRAVEL",
+   "advertisingChannelSubType": "TRAVEL_ACTIVITIES",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "VIDEO",
+   "advertisingChannelSubType": "VIDEO_ACTION",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "VIDEO",
+   "advertisingChannelSubType": "VIDEO_NON_SKIPPABLE",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "VIDEO",
+   "advertisingChannelSubType": "VIDEO_SEQUENCE",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "VIDEO",
+   "advertisingChannelSubType": "VIDEO_REACH_TARGET_FREQUENCY",
+   "source": "googleads/campaign.md:89"
+  },
+  {
+   "advertisingChannelType": "MULTI_CHANNEL",
+   "advertisingChannelSubType": "APP_CAMPAIGN",
+   "source": "googleads/campaign.md:84"
+  },
+  {
+   "advertisingChannelType": "MULTI_CHANNEL",
+   "advertisingChannelSubType": "APP_CAMPAIGN_FOR_ENGAGEMENT",
+   "source": "googleads/campaign.md:84"
+  },
+  {
+   "advertisingChannelType": "MULTI_CHANNEL",
+   "advertisingChannelSubType": "APP_CAMPAIGN_FOR_PRE_REGISTRATION",
+   "source": "googleads/campaign.md:84"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "shoppingSetting.campaignPriority": "0",
+   "source": "googleads/campaign.md:513"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "shoppingSetting.campaignPriority": "1",
+   "source": "googleads/campaign.md:513"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "shoppingSetting.campaignPriority": "2",
+   "source": "googleads/campaign.md:513"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "shoppingSetting.merchantId": "required on create",
+   "source": "googleads/campaign.md:508"
+  },
+  {
+   "advertisingChannelType": "DEMAND_GEN",
+   "shoppingSetting.disableProductFeed": "true",
+   "source": "googleads/campaign.md:507"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "shoppingSetting.ignoreBrandExclusionInShoppingAds": "true",
+   "source": "googleads/campaign.md:509"
+  },
+  {
+   "advertisingChannelType": "PERFORMANCE_MAX",
+   "shoppingSetting.advertisingPartnerIds": "set",
+   "source": "googleads/campaign.md:514"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "shoppingSetting.advertisingPartnerIds": "set",
+   "source": "googleads/campaign.md:514"
+  },
+  {
+   "advertisingChannelType": "SEARCH",
+   "shoppingSetting.advertisingPartnerIds": "set",
+   "source": "googleads/campaign.md:514"
+  },
+  {
+   "advertisingChannelType": "DEMAND_GEN",
+   "shoppingSetting.advertisingPartnerIds": "set",
+   "source": "googleads/campaign.md:514"
+  },
+  {
+   "networkSettings.targetSearchNetwork": "true",
+   "networkSettings.targetGoogleSearch": "true",
+   "source": "googleads/campaign.md:462"
+  },
+  {
+   "CampaignBudget.period": "DAILY",
+   "CampaignBudget.amountMicros": "used",
+   "source": "googleads/campaign_budget.md:47"
+  },
+  {
+   "CampaignBudget.period": "CUSTOM_PERIOD",
+   "CampaignBudget.totalAmountMicros": "used",
+   "source": "googleads/campaign_budget.md:51"
+  },
+  {
+   "advertisingChannelType": "SEARCH",
+   "AdGroup.type": "SEARCH_STANDARD",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelType": "DISPLAY",
+   "AdGroup.type": "DISPLAY_STANDARD",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelType": "SHOPPING",
+   "AdGroup.type": "SHOPPING_PRODUCT_ADS",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelType": "HOTEL",
+   "AdGroup.type": "HOTEL_ADS",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelType": "SMART",
+   "AdGroup.type": "SMART_CAMPAIGN_ADS",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelType": "TRAVEL",
+   "AdGroup.type": "TRAVEL_ADS",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelSubType": "SHOPPING_SMART_ADS",
+   "AdGroup.type": "SHOPPING_SMART_ADS",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelSubType": "SHOPPING_COMPARISON_LISTING_ADS",
+   "AdGroup.type": "SHOPPING_COMPARISON_LISTING_ADS",
+   "source": "googleads/ad_group.md:73"
+  },
+  {
+   "advertisingChannelSubType": "YOUTUBE_AUDIO",
+   "AdGroup.type": "YOUTUBE_AUDIO",
+   "source": "googleads/ad_group.md:73"
+  }
+ ],
+ "notes": {
+  "Campaign": "The REST docs do not state which bidding strategies are valid per channel type, so bidding is not mapped. Sub-type and ad-group-type links come from the enum value descriptions.",
+  "Ad": "Ad-level settings not mapped."
+ }
+}
