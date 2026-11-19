@@ -1,0 +1,501 @@
+{
+  "platform": "Facebook ODAX",
+  "levels": [
+    "Campaign",
+    "Ad Set",
+    "Ad"
+  ],
+  "fields": [
+    {
+      "id": "objective",
+      "level": "Campaign",
+      "values": [
+        "OUTCOME_AWARENESS",
+        "OUTCOME_TRAFFIC",
+        "OUTCOME_ENGAGEMENT",
+        "OUTCOME_APP_PROMOTION",
+        "OUTCOME_LEADS",
+        "OUTCOME_SALES"
+      ]
+    },
+    {
+      "id": "destination_type",
+      "level": "Ad Set",
+      "values": [
+        "(none)",
+        "MESSENGER",
+        "WHATSAPP",
+        "PHONE_CALL",
+        "ON_POST",
+        "ON_PAGE",
+        "ON_EVENT",
+        "ON_VIDEO",
+        "ON_AD",
+        "LEAD_FROM_MESSENGER",
+        "LEAD_FROM_IG_DIRECT",
+        "WEBSITE"
+      ]
+    },
+    {
+      "id": "optimization_goal",
+      "level": "Ad Set",
+      "values": [
+        "AD_RECALL_LIFT",
+        "REACH",
+        "IMPRESSIONS",
+        "LINK_CLICKS",
+        "LANDING_PAGE_VIEWS",
+        "QUALITY_CALL",
+        "POST_ENGAGEMENT",
+        "PAGE_LIKES",
+        "EVENT_RESPONSES",
+        "OFFSITE_CONVERSIONS",
+        "APP_INSTALLS",
+        "THRUPLAY",
+        "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
+        "LEAD_GENERATION",
+        "QUALITY_LEAD",
+        "CONVERSATIONS"
+      ]
+    },
+    {
+      "id": "promoted_object",
+      "level": "Ad Set",
+      "values": [
+        "page_id",
+        "application_id + object_store_url",
+        "(none)",
+        "pixel_id + custom_event_type",
+        "page_id + pixel_id + custom_event_type",
+        "Campaign: product_catalog_id; Ad set: product_set_id + custom_event_type",
+        "place_page_set_id"
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "objective": "OUTCOME_AWARENESS",
+      "destination_type": "(none)",
+      "optimization_goal": "AD_RECALL_LIFT",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:732"
+    },
+    {
+      "objective": "OUTCOME_AWARENESS",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:733"
+    },
+    {
+      "objective": "OUTCOME_AWARENESS",
+      "destination_type": "(none)",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:734"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "(none)",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:735"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "(none)",
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:736"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:737"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "(none)",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:738"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:739"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "REACH",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:740"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:741"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "WHATSAPP",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:742"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "WHATSAPP",
+      "optimization_goal": "REACH",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:743"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "WHATSAPP",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:744"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "PHONE_CALL",
+      "optimization_goal": "QUALITY_CALL",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:745"
+    },
+    {
+      "objective": "OUTCOME_TRAFFIC",
+      "destination_type": "PHONE_CALL",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:746"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_POST",
+      "optimization_goal": "POST_ENGAGEMENT",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:747"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_POST",
+      "optimization_goal": "REACH",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:748"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_POST",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:749"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_PAGE",
+      "optimization_goal": "PAGE_LIKES",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:750"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_EVENT",
+      "optimization_goal": "EVENT_RESPONSES",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:751"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_EVENT",
+      "optimization_goal": "POST_ENGAGEMENT",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:752"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_EVENT",
+      "optimization_goal": "REACH",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:753"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_EVENT",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:754"
+    },
+    {
+      "objective": "OUTCOME_APP_PROMOTION",
+      "destination_type": "(none)",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:755"
+    },
+    {
+      "objective": "OUTCOME_APP_PROMOTION",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:756"
+    },
+    {
+      "objective": "OUTCOME_APP_PROMOTION",
+      "destination_type": "(none)",
+      "optimization_goal": "APP_INSTALLS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:757"
+    },
+    {
+      "objective": "OUTCOME_AWARENESS",
+      "destination_type": "(none)",
+      "optimization_goal": "THRUPLAY",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:758"
+    },
+    {
+      "objective": "OUTCOME_AWARENESS",
+      "destination_type": "(none)",
+      "optimization_goal": "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:759"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_VIDEO",
+      "optimization_goal": "THRUPLAY",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:760"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "ON_VIDEO",
+      "optimization_goal": "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
+      "promoted_object": "(none)",
+      "source": "facebook/ad_campaign.md:761"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "ON_AD",
+      "optimization_goal": "LEAD_GENERATION",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:762"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "ON_AD",
+      "optimization_goal": "QUALITY_LEAD",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:763"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "LEAD_FROM_MESSENGER",
+      "optimization_goal": "LEAD_GENERATION",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:764"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "LEAD_FROM_IG_DIRECT",
+      "optimization_goal": "LEAD_GENERATION",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:765"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "PHONE_CALL",
+      "optimization_goal": "QUALITY_CALL",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:766"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "CONVERSATIONS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:767"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:768"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "LEAD_GENERATION",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:769"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:770"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:771"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:772"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:773"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:774"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:775"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:776"
+    },
+    {
+      "objective": "OUTCOME_ENGAGEMENT",
+      "destination_type": "(none)",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:777"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:778"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:779"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:780"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:781"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:782"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:783"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:784"
+    },
+    {
+      "objective": "OUTCOME_LEADS",
+      "destination_type": "(none)",
+      "optimization_goal": "IMPRESSIONS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:785"
+    },
+    {
+      "objective": "OUTCOME_SALES",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:786"
+    },
+    {
+      "objective": "OUTCOME_SALES",
+      "destination_type": "(none)",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:787"
+    },
+    {
+      "objective": "OUTCOME_SALES",
+      "destination_type": "MESSENGER",
+      "optimization_goal": "CONVERSATIONS",
+      "promoted_object": "page_id + pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:788"
+    },
+    {
+      "objective": "OUTCOME_SALES",
+      "destination_type": "PHONE_CALL",
+      "optimization_goal": "QUALITY_CALL",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:789"
+    },
+    {
+      "objective": "OUTCOME_SALES",
+      "destination_type": "WEBSITE",
+      "optimization_goal": "LINK_CLICKS",
+      "promoted_object": "Campaign: product_catalog_id; Ad set: product_set_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:790"
+    },
+    {
+      "objective": "OUTCOME_AWARENESS",
+      "destination_type": "(none)",
+      "optimization_goal": "REACH",
+      "promoted_object": "place_page_set_id",
+      "source": "facebook/ad_campaign.md:791"
+    }
+  ],
+  "notes": {
+    "Ad": "The ODAX mapping table (ad_campaign.md:730-791) has no ad-level constraints."
+  },
+  "source_doc": "facebook/ad_campaign.md#odax-mapping"
+}

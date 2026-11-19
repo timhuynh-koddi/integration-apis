@@ -1,0 +1,25 @@
+:root{--bg:#fafafa;--fg:#1c1c1e;--muted:#6b6b70;--card:#fff;--line:#dcdce0;--chip:#f0f0f3;--accent:#1a6cf0;--accent-bg:#dce9ff}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161618;--fg:#ececf0;--muted:#9a9aa2;--card:#1f1f23;--line:#38383e;--chip:#2a2a30;--accent:#6aa3ff;--accent-bg:#1f3558}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.4 system-ui,sans-serif}
+header,main{padding:16px;max-width:1400px;margin:0 auto}
+h1{margin:0;font-size:20px}.sub{margin:4px 0 12px;color:var(--muted)}
+#tabs{display:flex;gap:8px;flex-wrap:wrap}
+#tabs button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:6px 12px;border-radius:6px;cursor:pointer;font:inherit}
+#tabs button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+#columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.col{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.col>h2{margin:0 0 8px;font-size:15px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.field{margin:0 0 14px}
+.field h3{margin:0 0 6px;font:600 12px ui-monospace,monospace;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--fg);border-radius:5px;padding:3px 7px;font:12px ui-monospace,monospace;cursor:default;text-align:left;transition:opacity .1s}
+.chip:focus-visible{outline:2px solid var(--accent)}
+body.hovering .chip{opacity:.25}
+body.hovering .chip.on{opacity:1;background:var(--accent-bg);border-color:var(--accent)}
+body.hovering .chip.self{opacity:1;background:var(--accent);border-color:var(--accent);color:#fff}
+.note{color:var(--muted);font-size:12px;margin:8px 0 0}
+.empty{color:var(--muted);font-style:italic}
+#info{margin-top:12px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--muted);font-size:12px;min-height:44px}
+#info code{font-family:ui-monospace,monospace}
+@media (max-width:768px){#columns{grid-template-columns:1fr}}

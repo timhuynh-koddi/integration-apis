@@ -1,0 +1,852 @@
+{
+  "platform": "Facebook Legacy",
+  "levels": [
+    "Campaign",
+    "Ad Set",
+    "Ad"
+  ],
+  "fields": [
+    {
+      "id": "objective",
+      "level": "Campaign",
+      "values": [
+        "APP_INSTALLS",
+        "BRAND_AWARENESS",
+        "CONVERSIONS",
+        "EVENT_RESPONSES",
+        "LEAD_GENERATION",
+        "LINK_CLICKS",
+        "MESSAGES",
+        "POST_ENGAGEMENT",
+        "PRODUCT_CATALOG_SALES",
+        "REACH",
+        "STORE_VISITS",
+        "VIDEO_VIEWS",
+        "PAGE_LIKES",
+        "OFFER_CLAIMS"
+      ]
+    },
+    {
+      "id": "promoted_object",
+      "level": "Ad Set",
+      "values": [
+        "application_id + object_store_url",
+        "application_id + object_store_url + custom_event_type (only if optimization_goal = OFFSITE_CONVERSIONS)",
+        "pixel_id",
+        "pixel_id + custom_event_type",
+        "pixel_id + pixel_rule + custom_event_type",
+        "event_id + custom_event_type",
+        "application_id + object_store_url + custom_event_type",
+        "offline_conversion_data_set_id + custom_event_type",
+        "application_id + object_store_url (mobile app / Instant Experiences app engagement only)",
+        "product_set_id",
+        "product_set_id + custom_event_type",
+        "page_id"
+      ]
+    },
+    {
+      "id": "optimization_goal",
+      "level": "Ad Set",
+      "values": [
+        "OFFSITE_CONVERSIONS",
+        "APP_INSTALLS",
+        "INCREMENTAL_OFFSITE_CONVERSIONS"
+      ]
+    },
+    {
+      "id": "attribution_spec",
+      "level": "Ad Set",
+      "values": [
+        "1-day click",
+        "7-day click",
+        "1-day click + 1-day view",
+        "7-day click + 1-day view",
+        "1-day click + 1-day engaged-view",
+        "1-day click + 1-day engaged-view + 1-day view",
+        "Null click, Null view"
+      ]
+    },
+    {
+      "id": "ad_type",
+      "level": "Ad",
+      "values": [
+        "Image Ads",
+        "Video Ads",
+        "Carousel Ads",
+        "Instant Experience Ads",
+        "App Ads",
+        "Instagram Ads",
+        "Segment Asset Customization Ads",
+        "Placement Asset Customization Ads",
+        "Multi-Language Ads",
+        "Dynamic Ads",
+        "Dynamic Creative",
+        "Collection Ads",
+        "Ads that click to Messenger",
+        "Offer Ads",
+        "Event and Local Ads",
+        "Lead Ads",
+        "Messenger Ads",
+        "Collaborative Ads"
+      ]
+    },
+    {
+      "id": "creative_field",
+      "level": "Ad",
+      "values": [
+        "object_story_id",
+        "object_story_spec",
+        "object_id",
+        "body"
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "App Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Segment Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Multi-Language Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Dynamic Ads",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:571"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Segment Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Multi-Language Ads",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "BRAND_AWARENESS",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:572"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Collection Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "App Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Ads that click to Messenger",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Offer Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Segment Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Multi-Language Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Dynamic Ads",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:573"
+    },
+    {
+      "objective": "EVENT_RESPONSES",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:574"
+    },
+    {
+      "objective": "EVENT_RESPONSES",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:574"
+    },
+    {
+      "objective": "EVENT_RESPONSES",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:574"
+    },
+    {
+      "objective": "EVENT_RESPONSES",
+      "ad_type": "Event and Local Ads",
+      "source": "facebook/ad_campaign.md:574"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Lead Ads",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:575"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Collection Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "App Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Offer Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Segment Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Multi-Language Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Dynamic Ads",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:576"
+    },
+    {
+      "objective": "MESSAGES",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:577"
+    },
+    {
+      "objective": "MESSAGES",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:577"
+    },
+    {
+      "objective": "MESSAGES",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:577"
+    },
+    {
+      "objective": "MESSAGES",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:577"
+    },
+    {
+      "objective": "MESSAGES",
+      "ad_type": "Messenger Ads",
+      "source": "facebook/ad_campaign.md:577"
+    },
+    {
+      "objective": "POST_ENGAGEMENT",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:578"
+    },
+    {
+      "objective": "POST_ENGAGEMENT",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:578"
+    },
+    {
+      "objective": "POST_ENGAGEMENT",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:578"
+    },
+    {
+      "objective": "POST_ENGAGEMENT",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:578"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:579"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:579"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "ad_type": "Collection Ads",
+      "source": "facebook/ad_campaign.md:579"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:579"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "ad_type": "Dynamic Ads",
+      "source": "facebook/ad_campaign.md:579"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "ad_type": "Collaborative Ads",
+      "source": "facebook/ad_campaign.md:579"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Segment Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Multi-Language Ads",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "REACH",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:580"
+    },
+    {
+      "objective": "STORE_VISITS",
+      "ad_type": "Image Ads",
+      "source": "facebook/ad_campaign.md:581"
+    },
+    {
+      "objective": "STORE_VISITS",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:581"
+    },
+    {
+      "objective": "STORE_VISITS",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:581"
+    },
+    {
+      "objective": "STORE_VISITS",
+      "ad_type": "Collection Ads",
+      "source": "facebook/ad_campaign.md:581"
+    },
+    {
+      "objective": "STORE_VISITS",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:581"
+    },
+    {
+      "objective": "STORE_VISITS",
+      "ad_type": "Offer Ads",
+      "source": "facebook/ad_campaign.md:581"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Video Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Carousel Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Instant Experience Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Instagram Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Segment Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Placement Asset Customization Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Multi-Language Ads",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "ad_type": "Dynamic Creative",
+      "source": "facebook/ad_campaign.md:582"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:590"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:590"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:591"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:591"
+    },
+    {
+      "objective": "EVENT_RESPONSES",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:592"
+    },
+    {
+      "objective": "EVENT_RESPONSES",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:592"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:593"
+    },
+    {
+      "objective": "LEAD_GENERATION",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:593"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:594"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:594"
+    },
+    {
+      "objective": "MESSAGES",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:595"
+    },
+    {
+      "objective": "PAGE_LIKES",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:596"
+    },
+    {
+      "objective": "PAGE_LIKES",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:596"
+    },
+    {
+      "objective": "PAGE_LIKES",
+      "creative_field": "object_id",
+      "source": "facebook/ad_campaign.md:596"
+    },
+    {
+      "objective": "PAGE_LIKES",
+      "creative_field": "body",
+      "source": "facebook/ad_campaign.md:596"
+    },
+    {
+      "objective": "POST_ENGAGEMENT",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:597"
+    },
+    {
+      "objective": "POST_ENGAGEMENT",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:597"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "creative_field": "object_story_id",
+      "source": "facebook/ad_campaign.md:598"
+    },
+    {
+      "objective": "VIDEO_VIEWS",
+      "creative_field": "object_story_spec",
+      "source": "facebook/ad_campaign.md:598"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "promoted_object": "application_id + object_store_url",
+      "source": "facebook/ad_campaign.md:621"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "promoted_object": "application_id + object_store_url + custom_event_type (only if optimization_goal = OFFSITE_CONVERSIONS)",
+      "source": "facebook/ad_campaign.md:621"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "promoted_object": "pixel_id",
+      "source": "facebook/ad_campaign.md:622"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "promoted_object": "pixel_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:622"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "promoted_object": "pixel_id + pixel_rule + custom_event_type",
+      "source": "facebook/ad_campaign.md:622"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "promoted_object": "event_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:622"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "promoted_object": "application_id + object_store_url + custom_event_type",
+      "source": "facebook/ad_campaign.md:622"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "promoted_object": "offline_conversion_data_set_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:622"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "promoted_object": "application_id + object_store_url (mobile app / Instant Experiences app engagement only)",
+      "source": "facebook/ad_campaign.md:623"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "promoted_object": "product_set_id",
+      "source": "facebook/ad_campaign.md:624"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "promoted_object": "product_set_id + custom_event_type",
+      "source": "facebook/ad_campaign.md:624"
+    },
+    {
+      "objective": "PAGE_LIKES",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:625"
+    },
+    {
+      "objective": "OFFER_CLAIMS",
+      "promoted_object": "page_id",
+      "source": "facebook/ad_campaign.md:626"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "1-day click",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "7-day click",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "1-day click + 1-day view",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "7-day click + 1-day view",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "1-day click",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "7-day click",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "1-day click + 1-day view",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "PRODUCT_CATALOG_SALES",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "7-day click + 1-day view",
+      "source": "facebook/ad_campaign.md:672"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "1-day click",
+      "source": "facebook/ad_campaign.md:673"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "7-day click",
+      "source": "facebook/ad_campaign.md:673"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "1-day click",
+      "source": "facebook/ad_campaign.md:673"
+    },
+    {
+      "objective": "LINK_CLICKS",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "attribution_spec": "7-day click",
+      "source": "facebook/ad_campaign.md:673"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "optimization_goal": "APP_INSTALLS",
+      "attribution_spec": "1-day click",
+      "source": "facebook/ad_campaign.md:674"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "optimization_goal": "APP_INSTALLS",
+      "attribution_spec": "1-day click + 1-day engaged-view",
+      "source": "facebook/ad_campaign.md:674"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "optimization_goal": "APP_INSTALLS",
+      "attribution_spec": "1-day click + 1-day view",
+      "source": "facebook/ad_campaign.md:674"
+    },
+    {
+      "objective": "APP_INSTALLS",
+      "optimization_goal": "APP_INSTALLS",
+      "attribution_spec": "1-day click + 1-day engaged-view + 1-day view",
+      "source": "facebook/ad_campaign.md:674"
+    },
+    {
+      "objective": "CONVERSIONS",
+      "optimization_goal": "INCREMENTAL_OFFSITE_CONVERSIONS",
+      "attribution_spec": "Null click, Null view",
+      "source": "facebook/ad_campaign.md:675"
+    }
+  ],
+  "notes": {
+    "Ad Set": "optimization_goal shows only the goals that have attribution_spec rules (lines 670-677). Objective \u2192 optimization_goal validation is an external link, not in the local docs (unverified). Other goals allow only 1-day click. Placement rules (639-661) are not covered."
+  },
+  "source_doc": "facebook/ad_campaign.md#objective-validation"
+}

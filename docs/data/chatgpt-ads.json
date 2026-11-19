@@ -1,0 +1,29 @@
+{
+  "platform": "ChatGPT Ads",
+  "levels": ["Campaign", "Ad Group", "Ad"],
+  "fields": [
+    {"id": "bidding_type", "level": "Campaign", "values": ["impressions", "clicks", "conversions"]},
+    {"id": "mode", "level": "Campaign", "values": ["(none)", "product_feed"]},
+    {"id": "conversion_event_setting_ids", "level": "Campaign", "values": ["exactly one active standard event setting ID", "not used"]},
+    {"id": "billing_event_type", "level": "Ad Group", "values": ["impression", "click"]},
+    {"id": "creative.type", "level": "Ad", "values": ["chat_card", "product_ad_template"]},
+    {"id": "creative.file_id + creative.target_url", "level": "Ad", "values": ["required", "not required (taken from feed item)"]}
+  ],
+  "combos": [
+    {"bidding_type": "impressions", "billing_event_type": "impression", "source": "chatgptads/adgroup.md:61"},
+    {"bidding_type": "clicks", "billing_event_type": "click", "source": "chatgptads/adgroup.md:61"},
+    {"bidding_type": "conversions", "billing_event_type": "click", "source": "chatgptads/adgroup.md:61,95-97"},
+    {"bidding_type": "conversions", "conversion_event_setting_ids": "exactly one active standard event setting ID", "source": "chatgptads/campaign.md:77,152-155"},
+    {"bidding_type": "impressions", "conversion_event_setting_ids": "not used", "source": "chatgptads/campaign.md:76-77 (inferred: only `conversions` is documented to take it)"},
+    {"bidding_type": "clicks", "conversion_event_setting_ids": "not used", "source": "chatgptads/campaign.md:76-77 (inferred: only `conversions` is documented to take it)"},
+    {"mode": "product_feed", "creative.type": "product_ad_template", "source": "chatgptads/ad.md:87-92"},
+    {"mode": "(none)", "creative.type": "chat_card", "source": "chatgptads/ad.md:61"},
+    {"creative.type": "chat_card", "creative.file_id + creative.target_url": "required", "source": "chatgptads/ad.md:65-66"},
+    {"creative.type": "product_ad_template", "creative.file_id + creative.target_url": "not required (taken from feed item)", "source": "chatgptads/ad.md:65-66,90-92"}
+  ],
+  "notes": {
+    "Ad": "Unverified: the docs don't say whether `chat_card` ads are allowed in a product_feed campaign, or `product_ad_template` outside one. The mode ↔ creative.type links show only what the docs state (ad.md:87-92). A product-feed ad group holds at most one non-archived product_ad_template ad.",
+    "Campaign": "Bidding type can't be changed after creation; conversions also needs conversion bidding enabled on the account."
+  },
+  "source_doc": "chatgptads/"
+}
