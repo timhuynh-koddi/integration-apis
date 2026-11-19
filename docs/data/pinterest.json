@@ -1,0 +1,373 @@
+{
+ "platform": "Pinterest",
+ "levels": [
+  "Campaign",
+  "Ad Group",
+  "Ad"
+ ],
+ "fields": [
+  {
+   "id": "objective_type",
+   "level": "Campaign",
+   "values": [
+    "AWARENESS",
+    "CONSIDERATION",
+    "VIDEO_COMPLETION",
+    "WEB_CONVERSION",
+    "CATALOG_SALES",
+    "APP_INSTALL",
+    "SALES",
+    "LEADS",
+    "CTV_CONSIDERATION",
+    "WEB_SESSIONS",
+    "VIDEO_VIEW"
+   ]
+  },
+  {
+   "id": "is_campaign_budget_optimization",
+   "level": "Campaign",
+   "values": [
+    "true",
+    "false"
+   ]
+  },
+  {
+   "id": "campaign spend cap",
+   "level": "Campaign",
+   "values": [
+    "daily_spend_cap",
+    "lifetime_spend_cap",
+    "none (ad group budgets)"
+   ]
+  },
+  {
+   "id": "is_performance_plus",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "is_top_of_search",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "is_automated_campaign",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "is_flexible_daily_budgets",
+   "level": "Campaign",
+   "values": [
+    "true"
+   ]
+  },
+  {
+   "id": "ctv_goal_type",
+   "level": "Campaign",
+   "values": [
+    "REACH_BLAST",
+    "EFFICIENT_ECPM",
+    "CONSIDERATION",
+    "CONVERSIONS",
+    "ROAS"
+   ]
+  },
+  {
+   "id": "billable_event",
+   "level": "Ad Group",
+   "values": [
+    "CLICKTHROUGH",
+    "IMPRESSION",
+    "VIDEO_V_50_MRC"
+   ]
+  },
+  {
+   "id": "bid_strategy_type",
+   "level": "Ad Group",
+   "values": [
+    "AUTOMATIC_BID",
+    "MAX_BID",
+    "TARGET_AVG"
+   ]
+  },
+  {
+   "id": "budget_type",
+   "level": "Ad Group",
+   "values": [
+    "DAILY",
+    "LIFETIME",
+    "CBO_ADGROUP"
+   ]
+  },
+  {
+   "id": "pacing_delivery_type",
+   "level": "Ad Group",
+   "values": [
+    "STANDARD",
+    "ACCELERATED"
+   ]
+  },
+  {
+   "id": "bid_in_micro_currency",
+   "level": "Ad Group",
+   "values": [
+    "required"
+   ]
+  },
+  {
+   "id": "budget_in_micro_currency",
+   "level": "Ad Group",
+   "values": [
+    "required"
+   ]
+  },
+  {
+   "id": "optimization_goal_metadata",
+   "level": "Ad Group",
+   "values": [
+    "required"
+   ]
+  },
+  {
+   "id": "lifetime_frequency_cap",
+   "level": "Ad Group",
+   "values": [
+    "allowed"
+   ]
+  }
+ ],
+ "combos": [
+  {
+   "objective_type": "AWARENESS",
+   "is_campaign_budget_optimization": "true",
+   "source": "pinterest/campaigns.md:435"
+  },
+  {
+   "objective_type": "CONSIDERATION",
+   "is_campaign_budget_optimization": "true",
+   "source": "pinterest/campaigns.md:435"
+  },
+  {
+   "objective_type": "WEB_CONVERSION",
+   "is_campaign_budget_optimization": "true",
+   "source": "pinterest/campaigns.md:435"
+  },
+  {
+   "objective_type": "CATALOG_SALES",
+   "is_campaign_budget_optimization": "true",
+   "source": "pinterest/campaigns.md:435"
+  },
+  {
+   "objective_type": "VIDEO_COMPLETION",
+   "is_campaign_budget_optimization": "true",
+   "source": "pinterest/campaigns.md:435"
+  },
+  {
+   "objective_type": "CTV_CONSIDERATION",
+   "is_campaign_budget_optimization": "true",
+   "source": "pinterest/campaigns.md:435"
+  },
+  {
+   "objective_type": "CONSIDERATION",
+   "is_performance_plus": "true",
+   "source": "pinterest/campaigns.md:309"
+  },
+  {
+   "objective_type": "WEB_CONVERSION",
+   "is_performance_plus": "true",
+   "source": "pinterest/campaigns.md:309"
+  },
+  {
+   "objective_type": "SALES",
+   "is_performance_plus": "true",
+   "source": "pinterest/campaigns.md:309"
+  },
+  {
+   "objective_type": "LEADS",
+   "is_performance_plus": "true",
+   "source": "pinterest/campaigns.md:309"
+  },
+  {
+   "objective_type": "CATALOG_SALES",
+   "is_performance_plus": "true",
+   "source": "pinterest/campaigns.md:309"
+  },
+  {
+   "objective_type": "APP_INSTALL",
+   "is_performance_plus": "true",
+   "source": "pinterest/campaigns.md:309"
+  },
+  {
+   "objective_type": "CONSIDERATION",
+   "is_top_of_search": "true",
+   "source": "pinterest/campaigns.md:310"
+  },
+  {
+   "objective_type": "WEB_CONVERSION",
+   "is_top_of_search": "true",
+   "source": "pinterest/campaigns.md:310"
+  },
+  {
+   "objective_type": "SALES",
+   "is_top_of_search": "true",
+   "source": "pinterest/campaigns.md:310"
+  },
+  {
+   "objective_type": "LEADS",
+   "is_top_of_search": "true",
+   "source": "pinterest/campaigns.md:310"
+  },
+  {
+   "objective_type": "CATALOG_SALES",
+   "is_top_of_search": "true",
+   "source": "pinterest/campaigns.md:310"
+  },
+  {
+   "objective_type": "CONSIDERATION",
+   "is_automated_campaign": "true",
+   "source": "pinterest/campaigns.md:304"
+  },
+  {
+   "objective_type": "WEB_CONVERSION",
+   "is_automated_campaign": "true",
+   "source": "pinterest/campaigns.md:304"
+  },
+  {
+   "objective_type": "SALES",
+   "is_automated_campaign": "true",
+   "source": "pinterest/campaigns.md:304"
+  },
+  {
+   "objective_type": "LEADS",
+   "is_automated_campaign": "true",
+   "source": "pinterest/campaigns.md:304"
+  },
+  {
+   "objective_type": "CATALOG_SALES",
+   "is_automated_campaign": "true",
+   "source": "pinterest/campaigns.md:304"
+  },
+  {
+   "is_automated_campaign": "true",
+   "campaign spend cap": "daily_spend_cap",
+   "source": "pinterest/campaigns.md:304"
+  },
+  {
+   "is_flexible_daily_budgets": "true",
+   "is_campaign_budget_optimization": "true",
+   "campaign spend cap": "daily_spend_cap",
+   "source": "pinterest/campaigns.md:307"
+  },
+  {
+   "is_campaign_budget_optimization": "true",
+   "campaign spend cap": "daily_spend_cap",
+   "source": "pinterest/campaigns.md:299"
+  },
+  {
+   "is_campaign_budget_optimization": "true",
+   "campaign spend cap": "lifetime_spend_cap",
+   "source": "pinterest/campaigns.md:311"
+  },
+  {
+   "is_campaign_budget_optimization": "false",
+   "campaign spend cap": "none (ad group budgets)",
+   "source": "pinterest/campaigns.md:299"
+  },
+  {
+   "objective_type": "CTV_CONSIDERATION",
+   "ctv_goal_type": "REACH_BLAST",
+   "source": "pinterest/campaigns.md:298"
+  },
+  {
+   "objective_type": "CTV_CONSIDERATION",
+   "ctv_goal_type": "EFFICIENT_ECPM",
+   "source": "pinterest/campaigns.md:298"
+  },
+  {
+   "objective_type": "CTV_CONSIDERATION",
+   "ctv_goal_type": "CONSIDERATION",
+   "source": "pinterest/campaigns.md:298"
+  },
+  {
+   "objective_type": "CTV_CONSIDERATION",
+   "ctv_goal_type": "CONVERSIONS",
+   "source": "pinterest/campaigns.md:298"
+  },
+  {
+   "objective_type": "CTV_CONSIDERATION",
+   "ctv_goal_type": "ROAS",
+   "source": "pinterest/campaigns.md:298"
+  },
+  {
+   "objective_type": "AWARENESS",
+   "billable_event": "IMPRESSION",
+   "bid_in_micro_currency": "required",
+   "source": "pinterest/ad_groups.md:419"
+  },
+  {
+   "objective_type": "CONSIDERATION",
+   "billable_event": "CLICKTHROUGH",
+   "bid_in_micro_currency": "required",
+   "source": "pinterest/ad_groups.md:419"
+  },
+  {
+   "objective_type": "CATALOG_SALES",
+   "billable_event": "CLICKTHROUGH",
+   "bid_in_micro_currency": "required",
+   "source": "pinterest/ad_groups.md:419"
+  },
+  {
+   "objective_type": "VIDEO_VIEW",
+   "billable_event": "VIDEO_V_50_MRC",
+   "bid_in_micro_currency": "required",
+   "source": "pinterest/ad_groups.md:419"
+  },
+  {
+   "objective_type": "VIDEO_COMPLETION",
+   "bid_strategy_type": "AUTOMATIC_BID",
+   "source": "pinterest/campaigns.md:895"
+  },
+  {
+   "is_campaign_budget_optimization": "true",
+   "budget_type": "CBO_ADGROUP",
+   "source": "pinterest/campaigns.md:901"
+  },
+  {
+   "objective_type": "WEB_SESSIONS",
+   "budget_type": "LIFETIME",
+   "source": "pinterest/campaigns.md:901"
+  },
+  {
+   "is_campaign_budget_optimization": "true",
+   "pacing_delivery_type": "STANDARD",
+   "source": "pinterest/campaigns.md:925"
+  },
+  {
+   "is_campaign_budget_optimization": "false",
+   "budget_in_micro_currency": "required",
+   "source": "pinterest/ad_groups.md:423"
+  },
+  {
+   "objective_type": "WEB_CONVERSION",
+   "optimization_goal_metadata": "required",
+   "source": "pinterest/ad_groups.md:441"
+  },
+  {
+   "billable_event": "IMPRESSION",
+   "lifetime_frequency_cap": "allowed",
+   "source": "pinterest/ad_groups.md:437"
+  }
+ ],
+ "notes": {
+  "Campaign": "Objective to billable-event/optimization combinations beyond the bid-required list are not stated in these docs.",
+  "Ad": "Ad-level settings not mapped.",
+  "Ad Group": "Ad group enum descriptions (budget type, pacing) are in campaigns.md because the shared schemas are defined there."
+ }
+}

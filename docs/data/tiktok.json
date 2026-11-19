@@ -1,0 +1,439 @@
+{
+ "platform": "TikTok",
+ "levels": [
+  "Campaign",
+  "Ad Group",
+  "Ad"
+ ],
+ "fields": [
+  {
+   "id": "objective_type",
+   "level": "Campaign",
+   "values": [
+    "TRAFFIC",
+    "APP_PROMOTION",
+    "WEB_CONVERSIONS",
+    "LEAD_GENERATION",
+    "PRODUCT_SALES",
+    "REACH",
+    "VIDEO_VIEWS",
+    "ENGAGEMENT",
+    "RF_REACH"
+   ]
+  },
+  {
+   "id": "campaign_type",
+   "level": "Campaign",
+   "values": [
+    "REGULAR_CAMPAIGN",
+    "IOS14_CAMPAIGN"
+   ]
+  },
+  {
+   "id": "app_promotion_type",
+   "level": "Campaign",
+   "values": [
+    "APP_INSTALL",
+    "APP_RETARGETING",
+    "APP_PREREGISTRATION"
+   ]
+  },
+  {
+   "id": "rf_campaign_type",
+   "level": "Campaign",
+   "values": [
+    "STANDARD",
+    "PULSE"
+   ]
+  },
+  {
+   "id": "budget_optimize_on",
+   "level": "Campaign",
+   "values": [
+    "true (CBO enabled)"
+   ]
+  },
+  {
+   "id": "budget_mode",
+   "level": "Campaign",
+   "values": [
+    "BUDGET_MODE_INFINITE",
+    "BUDGET_MODE_DAY",
+    "BUDGET_MODE_TOTAL",
+    "BUDGET_MODE_DYNAMIC_DAILY_BUDGET"
+   ]
+  },
+  {
+   "id": "optimization_goal",
+   "level": "Ad Group",
+   "values": [
+    "CLICK",
+    "PAGE_VISIT",
+    "CONVERT",
+    "INSTALL",
+    "IN_APP_EVENT",
+    "TRAFFIC_LANDING_PAGE_VIEW",
+    "LEAD_GENERATION",
+    "CONVERSATION",
+    "FOLLOWERS",
+    "VALUE",
+    "AUTOMATIC_VALUE_OPTIMIZATION",
+    "PRODUCT_CLICK_IN_LIVE",
+    "MT_LIVE_ROOM",
+    "DESTINATION_VISIT",
+    "SHOW",
+    "REACH",
+    "ENGAGED_VIEW",
+    "ENGAGED_VIEW_FIFTEEN"
+   ]
+  },
+  {
+   "id": "billing_event",
+   "level": "Ad Group",
+   "values": [
+    "CPC",
+    "OCPM",
+    "CPM",
+    "CPV"
+   ]
+  },
+  {
+   "id": "bid_type",
+   "level": "Ad Group",
+   "values": [
+    "BID_TYPE_CUSTOM",
+    "BID_TYPE_NO_BID"
+   ]
+  },
+  {
+   "id": "bid_price",
+   "level": "Ad Group",
+   "values": [
+    "required",
+    "not required"
+   ]
+  },
+  {
+   "id": "conversion_bid_price",
+   "level": "Ad Group",
+   "values": [
+    "required",
+    "not required"
+   ]
+  },
+  {
+   "id": "pixel_id",
+   "level": "Ad Group",
+   "values": [
+    "required",
+    "not supported"
+   ]
+  }
+ ],
+ "combos": [
+  {
+   "objective_type": "RF_REACH",
+   "budget_mode": "BUDGET_MODE_INFINITE",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "objective_type": "RF_REACH",
+   "rf_campaign_type": "STANDARD",
+   "source": "tiktok/campaign.md:240"
+  },
+  {
+   "objective_type": "RF_REACH",
+   "rf_campaign_type": "PULSE",
+   "source": "tiktok/campaign.md:240"
+  },
+  {
+   "campaign_type": "IOS14_CAMPAIGN",
+   "objective_type": "PRODUCT_SALES",
+   "source": "tiktok/campaign.md:235"
+  },
+  {
+   "campaign_type": "IOS14_CAMPAIGN",
+   "objective_type": "APP_PROMOTION",
+   "app_promotion_type": "APP_INSTALL",
+   "source": "tiktok/campaign.md:235"
+  },
+  {
+   "campaign_type": "REGULAR_CAMPAIGN",
+   "objective_type": "APP_PROMOTION",
+   "app_promotion_type": "APP_RETARGETING",
+   "source": "tiktok/campaign.md:235"
+  },
+  {
+   "campaign_type": "REGULAR_CAMPAIGN",
+   "objective_type": "APP_PROMOTION",
+   "app_promotion_type": "APP_PREREGISTRATION",
+   "source": "tiktok/campaign.md:235"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "budget_mode": "BUDGET_MODE_TOTAL",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "TRAFFIC",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "APP_PROMOTION",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "WEB_CONVERSIONS",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "LEAD_GENERATION",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "PRODUCT_SALES",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "REACH",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "VIDEO_VIEWS",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "budget_optimize_on": "true (CBO enabled)",
+   "objective_type": "ENGAGEMENT",
+   "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+   "source": "tiktok/campaign.md:247"
+  },
+  {
+   "optimization_goal": "CLICK",
+   "billing_event": "CPC",
+   "source": "tiktok/ad_group.md:683"
+  },
+  {
+   "optimization_goal": "CLICK",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "PAGE_VISIT",
+   "billing_event": "CPC",
+   "source": "tiktok/ad_group.md:684"
+  },
+  {
+   "optimization_goal": "PAGE_VISIT",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "CONVERT",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:685"
+  },
+  {
+   "optimization_goal": "CONVERT",
+   "pixel_id": "required",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "INSTALL",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:686"
+  },
+  {
+   "optimization_goal": "INSTALL",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "IN_APP_EVENT",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:687"
+  },
+  {
+   "optimization_goal": "IN_APP_EVENT",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "TRAFFIC_LANDING_PAGE_VIEW",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:688"
+  },
+  {
+   "optimization_goal": "TRAFFIC_LANDING_PAGE_VIEW",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "LEAD_GENERATION",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:689"
+  },
+  {
+   "optimization_goal": "LEAD_GENERATION",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "CONVERSATION",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:690"
+  },
+  {
+   "optimization_goal": "CONVERSATION",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "FOLLOWERS",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:691"
+  },
+  {
+   "optimization_goal": "FOLLOWERS",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "VALUE",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:692"
+  },
+  {
+   "optimization_goal": "VALUE",
+   "pixel_id": "required",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "AUTOMATIC_VALUE_OPTIMIZATION",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:693"
+  },
+  {
+   "optimization_goal": "AUTOMATIC_VALUE_OPTIMIZATION",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "PRODUCT_CLICK_IN_LIVE",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:694"
+  },
+  {
+   "optimization_goal": "PRODUCT_CLICK_IN_LIVE",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "MT_LIVE_ROOM",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:695"
+  },
+  {
+   "optimization_goal": "MT_LIVE_ROOM",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "DESTINATION_VISIT",
+   "billing_event": "OCPM",
+   "source": "tiktok/ad_group.md:696"
+  },
+  {
+   "optimization_goal": "DESTINATION_VISIT",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "SHOW",
+   "billing_event": "CPM",
+   "source": "tiktok/ad_group.md:697"
+  },
+  {
+   "optimization_goal": "SHOW",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "REACH",
+   "billing_event": "CPM",
+   "source": "tiktok/ad_group.md:698"
+  },
+  {
+   "optimization_goal": "REACH",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "ENGAGED_VIEW",
+   "billing_event": "CPV",
+   "source": "tiktok/ad_group.md:699"
+  },
+  {
+   "optimization_goal": "ENGAGED_VIEW",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "optimization_goal": "ENGAGED_VIEW_FIFTEEN",
+   "billing_event": "CPV",
+   "source": "tiktok/ad_group.md:700"
+  },
+  {
+   "optimization_goal": "ENGAGED_VIEW_FIFTEEN",
+   "pixel_id": "not supported",
+   "source": "tiktok/ad_group.md:570"
+  },
+  {
+   "bid_type": "BID_TYPE_CUSTOM",
+   "billing_event": "CPC",
+   "bid_price": "required",
+   "source": "tiktok/ad_group.md:656"
+  },
+  {
+   "bid_type": "BID_TYPE_CUSTOM",
+   "billing_event": "CPM",
+   "bid_price": "required",
+   "source": "tiktok/ad_group.md:656"
+  },
+  {
+   "bid_type": "BID_TYPE_CUSTOM",
+   "billing_event": "CPV",
+   "bid_price": "required",
+   "source": "tiktok/ad_group.md:656"
+  },
+  {
+   "bid_type": "BID_TYPE_CUSTOM",
+   "billing_event": "OCPM",
+   "conversion_bid_price": "required",
+   "source": "tiktok/ad_group.md:657"
+  }
+ ],
+ "notes": {
+  "Campaign": "Objective to optimization-goal compatibility is on external Enumeration pages not in tiktok/*.md, so it is not mapped.",
+  "Ad": "Ad-level settings not mapped."
+ }
+}
