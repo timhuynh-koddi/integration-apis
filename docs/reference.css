@@ -1,0 +1,29 @@
+body.ref header{padding-bottom:0}
+body.ref header a{color:var(--accent)}
+#q{width:100%;max-width:560px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:inherit}
+#layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:16px;max-width:1400px;margin:0 auto;padding:16px}
+#side{position:sticky;top:8px;align-self:start;max-height:calc(100vh - 16px);overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px}
+#side details{margin:0 0 4px}
+#side summary{cursor:pointer;font-weight:600;padding:4px 6px;border-radius:4px}
+#side summary:hover{background:var(--chip)}
+#side a{display:block;padding:3px 6px 3px 16px;color:var(--fg);text-decoration:none;border-radius:4px;font-size:13px}
+#side a:hover{background:var(--chip)}
+#side a.cur{background:var(--accent-bg);color:var(--accent)}
+#view{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0;overflow:auto}
+#view h1{font-size:20px;margin:0 0 8px}
+#view h2{font-size:17px;margin:20px 0 8px}
+#view h3{font-size:15px}
+#view table{border-collapse:collapse;display:block;overflow:auto;max-width:100%;margin:8px 0;font-size:13px}
+#view th,#view td{border:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}
+#view th{background:var(--chip)}
+#view code{font-family:ui-monospace,monospace;font-size:12px;background:var(--chip);padding:1px 4px;border-radius:3px}
+#view pre{background:var(--chip);padding:10px;border-radius:6px;overflow:auto}
+#view pre code{background:none;padding:0}
+#view a{color:var(--accent)}
+.crumb{color:var(--muted);font-size:12px;margin:0 0 8px}
+.crumb a{color:var(--muted)}
+.list a{display:block;padding:5px 8px;border-bottom:1px solid var(--line);text-decoration:none;font-family:ui-monospace,monospace;font-size:13px}
+.list a:hover{background:var(--chip)}
+.list small{color:var(--muted);font-family:system-ui,sans-serif;margin-left:6px}
+.m{display:inline-block;min-width:54px;font-weight:700;color:var(--accent)}
+@media (max-width:768px){#layout{grid-template-columns:1fr}#side{position:static;max-height:240px}}
